@@ -618,4 +618,110 @@ html {
 
 .website-section .feature-card::before {
     background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+}
+
+/* Feature Lists */
+.feature-list {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.feature-list li {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "→";
+    color: #00d4ff;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Process Steps */
+.process-steps {
+    margin: 2rem 0;
+}
+
+.process-step {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.process-step h4 {
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.process-step p {
+    color: #cccccc;
+    margin: 0;
+}
+
+/* Team Stats */
+.team-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.team-stat {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-stat h4 {
+    color: #00d4ff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.team-stat p {
+    color: #cccccc;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Contact Form */
+.contact-form {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-form h3 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+    color: #00d4ff;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(45deg, #00d4ff, #ff00ff);
+    border-radius: 1px;
 } 

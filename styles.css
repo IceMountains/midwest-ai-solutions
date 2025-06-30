@@ -604,4 +604,18 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, #ff00ff, #00d4ff);
+}
+
+/* Website Section Styling */
+.website-section {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.02) 0%, rgba(255, 0, 255, 0.02) 100%);
+}
+
+.website-section .feature-card:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.15);
+}
+
+.website-section .feature-card::before {
+    background: linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
 } 

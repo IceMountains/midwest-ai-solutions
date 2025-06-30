@@ -208,34 +208,99 @@ document.head.appendChild(particleStyle);
 // Initialize particles
 createParticles();
 
-// Form submission handling
-document.querySelector('form')?.addEventListener('submit', function(e) {
-    e.preventDefault();
+// Contact Form Handling
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
     
-    // Get form data
-    const formData = new FormData(this);
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const message = this.querySelector('textarea').value;
-    
-    // Simple validation
-    if (!name || !email || !message) {
-        alert('Please fill in all fields');
-        return;
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            showSuccessMessage();
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Here you would typically send the data to your email service
+            // For now, we'll just log it to console
+            console.log('Form submitted:', data);
+        });
     }
     
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
+    // Make all "Get Started" buttons link to contact page
+    const getStartedButtons = document.querySelectorAll('.btn-primary, .btn-secondary');
+    getStartedButtons.forEach(button => {
+        if (button.textContent.toLowerCase().includes('get started') || 
+            button.textContent.toLowerCase().includes('start') ||
+            button.textContent.toLowerCase().includes('quote')) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'contact.html';
+            });
+        }
+    });
+});
+
+function showSuccessMessage() {
+    // Create success message
+    const successDiv = document.createElement('div');
+    successDiv.className = 'success-message';
+    successDiv.innerHTML = `
+        <div class="success-content">
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+        </div>
+    `;
     
+    // Add to page
+    document.body.appendChild(successDiv);
+    
+    // Remove after 5 seconds
     setTimeout(() => {
-        alert('Thank you for your message! We\'ll get back to you soon.');
-        this.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 2000);
+        successDiv.remove();
+    }, 5000);
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add hover effects to feature cards
+document.querySelectorAll('.feature-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+
+// Add loading animation to buttons
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', function() {
+        if (!this.href || this.href.includes('contact.html')) {
+            this.style.opacity = '0.7';
+            setTimeout(() => {
+                this.style.opacity = '1';
+            }, 200);
+        }
+    });
 });
 
 // Add loading animation

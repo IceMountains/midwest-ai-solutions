@@ -135,30 +135,48 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-input" placeholder="Your Email" required>
+                    <h3>Start Your Project Today</h3>
+                    <p class="form-subtitle">Get a free consultation and quote for your project</p>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-input" placeholder="Company Name">
                         </div>
                         <div class="form-group">
-                            <select class="form-input">
-                                <option value="">Select Service</option>
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">What service are you interested in?</option>
                                 <option value="ai-tools">AI Tools & Automation</option>
-                                <option value="website">Website Development</option>
-                                <option value="consultation">Consultation</option>
+                                <option value="website-starter">Website - Starter ($500)</option>
+                                <option value="website-professional">Website - Professional ($1,500)</option>
+                                <option value="website-enterprise">Website - Enterprise ($2,500)</option>
+                                <option value="consultation">Free Consultation</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-input" placeholder="Tell us about your project..." rows="5" required></textarea>
+                            <select class="form-input">
+                                <option value="">What's your timeline?</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2-weeks">1-2 weeks</option>
+                                <option value="1-month">1 month</option>
+                                <option value="2-3-months">2-3 months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Tell us about your project, goals, and any specific requirements..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Get Free Quote & Consultation</button>
                     </form>
                 </div>
             </div>

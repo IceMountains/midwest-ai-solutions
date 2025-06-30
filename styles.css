@@ -258,6 +258,20 @@ body {
     box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
 }
 
+/* New image styles */
+.hero-image, .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.hero-image:hover, .about-image:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
 /* Sections */
 section {
     padding: 5rem 0;

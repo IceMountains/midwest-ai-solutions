@@ -237,13 +237,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
-    background: rgba(255, 0, 0, 0.5);
 }
 
 .hero-visual {
-    background: rgba(0, 255, 0, 0.3);
-    border: 3px solid yellow;
     min-height: 400px;
 }
 
@@ -273,8 +269,6 @@ body {
     object-fit: contain;
     border-radius: 12px;
     transition: all 0.3s ease;
-    background: rgba(0, 255, 0, 0.2);
-    border: 2px solid green;
 }
 
 .hero-image:hover, .about-image:hover {

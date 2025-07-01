@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midwest AI Solutions - AI Tooling & Website Development in Hamilton, Ohio | Butler County</title>
+    <meta name="description" content="Leading AI solutions and website development company in Hamilton, Ohio. Serving Butler County and the greater Cincinnati area with custom AI tools, automation, and web development services.">
+    <meta name="keywords" content="AI solutions Hamilton Ohio, website development Hamilton, Butler County AI, Cincinnati AI services, Midwest AI tools, automation Hamilton Ohio, web design Cincinnati area">
+    <meta name="author" content="Midwest AI Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Midwest AI Solutions",
+        "description": "AI solutions and website development company serving Hamilton, Ohio and the greater Cincinnati area",
+        "url": "https://midwestai.com",
+        "telephone": "+1-555-123-4567",
+        "email": "hello@midwestai.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Hamilton",
+            "addressRegion": "OH",
+            "postalCode": "45011",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.3995",
+            "longitude": "-84.5613"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Hamilton"
+            },
+            {
+                "@type": "City", 
+                "name": "Cincinnati"
+            },
+            {
+                "@type": "City",
+                "name": "Dayton"
+            },
+            {
+                "@type": "City",
+                "name": "Columbus"
+            }
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.3995",
+                "longitude": "-84.5613"
+            },
+            "geoRadius": "50000"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00d4ff"/>
+                                    <stop offset="1" stop-color="#ff00ff"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Stylized M with circuit/AI lines -->
+                            <path d="M4 28V8L12 24L20 8V28" stroke="url(#logo-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="24" r="2" fill="#00d4ff"/>
+                            <circle cx="20" cy="8" r="2" fill="#ff00ff"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="logo-text">Midwest AI</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="ai-tools.html" class="nav-link">AI Tools</a></li>
+                <li><a href="website.html" class="nav-link">Website</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Hamilton, Ohio's Premier</span>
+                    <span class="title-line highlight">AI Solutions Provider</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Serving Hamilton, Butler County, and the greater Cincinnati area with cutting-edge AI tooling and custom website development. Transform your business with intelligent automation and stunning web experiences designed for the Midwest market.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">View Our Work</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="placeholder-image">
+                    <div style="width: 100%; height: 100px; background: red; color: white; font-size: 32px; display: flex; align-items: center; justify-content: center;">DEBUG BOX - SHOULD BE VISIBLE</div>
+                    <p style="color: yellow; font-size: 24px; text-align: center;">If you see this, the hero area is rendering!</p>
+                    <svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-image">
+                      <defs>
+                        <linearGradient id="bg-gradient" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0a0a0a"/>
+                          <stop offset="1" stop-color="#1a1a2e"/>
+                        </linearGradient>
+                        <linearGradient id="ai-glow" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#00d4ff"/>
+                          <stop offset="1" stop-color="#ff00ff"/>
+                        </linearGradient>
+                      </defs>
+                      <rect width="600" height="400" fill="url(#bg-gradient)"/>
+                      <ellipse cx="300" cy="350" rx="220" ry="40" fill="#22223a" opacity="0.7"/>
+                      <g stroke="url(#ai-glow)" stroke-width="2" opacity="0.7">
+                        <path d="M120 350 Q180 300 300 320 Q420 340 480 300" fill="none"/>
+                        <path d="M200 370 Q250 340 300 350 Q350 360 400 340" fill="none"/>
+                        <path d="M150 340 Q200 320 300 340 Q400 360 450 320" fill="none"/>
+                      </g>
+                      <g>
+                        <ellipse cx="300" cy="180" rx="90" ry="60" fill="none" stroke="url(#ai-glow)" stroke-width="4"/>
+                        <ellipse cx="300" cy="180" rx="60" ry="40" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.7"/>
+                        <ellipse cx="300" cy="180" rx="30" ry="20" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.7"/>
+                        <circle cx="240" cy="180" r="6" fill="#00d4ff"/>
+                        <circle cx="360" cy="180" r="6" fill="#ff00ff"/>
+                        <circle cx="300" cy="140" r="6" fill="#00d4ff"/>
+                        <circle cx="300" cy="220" r="6" fill="#ff00ff"/>
+                        <circle cx="270" cy="160" r="4" fill="#00d4ff"/>
+                        <circle cx="330" cy="200" r="4" fill="#ff00ff"/>
+                        <circle cx="330" cy="160" r="4" fill="#00d4ff"/>
+                        <circle cx="270" cy="200" r="4" fill="#ff00ff"/>
+                        <line x1="240" y1="180" x2="270" y2="160" stroke="#00d4ff" stroke-width="2"/>
+                        <line x1="240" y1="180" x2="270" y2="200" stroke="#ff00ff" stroke-width="2"/>
+                        <line x1="360" y1="180" x2="330" y2="160" stroke="#00d4ff" stroke-width="2"/>
+                        <line x1="360" y1="180" x2="330" y2="200" stroke="#ff00ff" stroke-width="2"/>
+                        <line x1="300" y1="140" x2="270" y2="160" stroke="#00d4ff" stroke-width="2"/>
+                        <line x1="300" y1="140" x2="330" y2="160" stroke="#00d4ff" stroke-width="2"/>
+                        <line x1="300" y1="220" x2="270" y2="200" stroke="#ff00ff" stroke-width="2"/>
+                        <line x1="300" y1="220" x2="330" y2="200" stroke="#ff00ff" stroke-width="2"/>
+                      </g>
+                      <circle cx="100" cy="80" r="8" fill="#00d4ff" opacity="0.4"/>
+                      <circle cx="500" cy="120" r="6" fill="#ff00ff" opacity="0.4"/>
+                      <circle cx="80" cy="320" r="10" fill="#00d4ff" opacity="0.3"/>
+                      <circle cx="520" cy="280" r="7" fill="#ff00ff" opacity="0.3"/>
+                      <text x="300" y="380" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" opacity="0.7">
+                        Midwest AI Solutions
+                      </text>
+                      <text x="300" y="400" text-anchor="middle" fill="#00d4ff" font-family="Arial, sans-serif" font-size="14" opacity="0.7">
+                        Hamilton, Ohio
+                      </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Glowing line effect -->
+        <div class="glow-line"></div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Tools & Automation in Hamilton, Ohio</h2>
+                <p class="section-subtitle">Intelligent solutions that streamline your business operations across Butler County and the Cincinnati region</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Brain/AI SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="ai-gradient1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M16 4C12 4 8 6 8 10C8 12 9 14 11 15C9 16 8 18 8 20C8 24 12 26 16 26C20 26 24 24 24 20C24 18 23 16 21 15C23 14 24 12 24 10C24 6 20 4 16 4Z" stroke="url(#ai-gradient1)" stroke-width="2" fill="none"/>
+                                <path d="M12 12C12 10.8954 12.8954 10 14 10H18C19.1046 10 20 10.8954 20 12C20 13.1046 19.1046 14 18 14H14C12.8954 14 12 13.1046 12 12Z" fill="url(#ai-gradient1)"/>
+                                <circle cx="16" cy="18" r="2" fill="url(#ai-gradient1)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Custom AI Solutions for Ohio Businesses</h3>
+                    <p class="feature-description">
+                        Tailored AI applications designed specifically for Hamilton and Cincinnati area businesses, from chatbots to predictive analytics that understand the local market.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Automation/Robot SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="ai-gradient2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="8" y="12" width="16" height="12" rx="2" stroke="url(#ai-gradient2)" stroke-width="2" fill="none"/>
+                                <rect x="12" y="16" width="8" height="4" rx="2" fill="url(#ai-gradient2)"/>
+                                <circle cx="16" cy="8" r="3" stroke="url(#ai-gradient2)" stroke-width="2" fill="none"/>
+                                <path d="M16 11V12" stroke="url(#ai-gradient2)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Process Automation for Midwest Efficiency</h3>
+                    <p class="feature-description">
+                        Automate repetitive tasks and workflows to increase efficiency and reduce human error in your operations across Butler County and the Cincinnati region.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Data Analytics SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="ai-gradient3" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="6" y="18" width="4" height="8" rx="2" fill="url(#ai-gradient3)"/>
+                                <rect x="14" y="12" width="4" height="14" rx="2" fill="url(#ai-gradient3)"/>
+                                <rect x="22" y="8" width="4" height="18" rx="2" fill="url(#ai-gradient3)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Data Analytics for Ohio Markets</h3>
+                    <p class="feature-description">
+                        Transform your data into actionable insights with AI-powered analytics and intelligent reporting systems tailored for the Hamilton and Cincinnati business landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development Section -->
+    <section id="website" class="features website-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Website Development in Hamilton, Ohio</h2>
+                <p class="section-subtitle">Modern, responsive websites that convert visitors into customers across Butler County and the Cincinnati area</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Responsive Design SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="web-gradient1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="4" y="8" width="8" height="16" rx="1" stroke="url(#web-gradient1)" stroke-width="2" fill="none"/>
+                                <rect x="20" y="8" width="8" height="16" rx="1" stroke="url(#web-gradient1)" stroke-width="2" fill="none"/>
+                                <rect x="12" y="6" width="8" height="20" rx="1" stroke="url(#web-gradient1)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Responsive Design for Ohio Customers</h3>
+                    <p class="feature-description">
+                        Websites that look and work perfectly on all devices - desktop, tablet, and mobile - ensuring maximum reach across Hamilton, Cincinnati, and the surrounding areas.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Performance/Speed SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="web-gradient2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M8 24L16 8L24 24" stroke="url(#web-gradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 20H20" stroke="url(#web-gradient2)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Performance Optimized for Midwest</h3>
+                    <p class="feature-description">
+                        Lightning-fast loading times and optimized performance that keeps visitors engaged and improves search rankings for local Hamilton and Cincinnati searches.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- E-commerce/Shopping SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="web-gradient3" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M8 8H10L12 24H20L22 8H24" stroke="url(#web-gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="28" r="2" stroke="url(#web-gradient3)" stroke-width="2" fill="none"/>
+                                <circle cx="20" cy="28" r="2" stroke="url(#web-gradient3)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">E-commerce Solutions for Ohio</h3>
+                    <p class="feature-description">
+                        Complete online store solutions with secure payment processing, inventory management, and customer analytics designed for the Hamilton and Cincinnati market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Midwest AI Solutions - Hamilton, Ohio</h2>
+                    <p class="about-description">
+                        Based in the heart of Hamilton, Ohio, we're a team of passionate technologists dedicated to bringing cutting-edge AI solutions to businesses across Butler County, Cincinnati, and the greater Midwest region. Our mission is to democratize AI technology and help local companies leverage its power to grow and succeed in today's competitive landscape.
+                    </p>
+                    <p class="about-description">
+                        With years of experience in both AI development and web technologies, we bridge the gap between complex AI systems and user-friendly applications that drive real business results for Hamilton, Cincinnati, Dayton, and Columbus area businesses.
+                    </p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="about-visual">
+                    <div class="placeholder-image">
+                        <img src="images/team-photo.svg" alt="Our Team - Hamilton, Ohio" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch - Hamilton, Ohio AI Solutions</h2>
+                <p class="section-subtitle">Ready to transform your business with AI? Serving Hamilton, Butler County, and the greater Cincinnati area.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Envelope/Mail SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="4" y="7" width="20" height="14" rx="3" stroke="url(#contact-gradient1)" stroke-width="2" fill="none"/>
+                                <path d="M6 9L14 16L22 9" stroke="url(#contact-gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@midwestai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Phone SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M7 5C7 4.44772 7.44772 4 8 4H11C11.5523 4 12 4.44772 12 5V7C12 7.55228 11.5523 8 11 8H9C8.44772 8 8 7.55228 8 7V5Z" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                                <path d="M16 20C18.2091 20 20 18.2091 20 16V12C20 9.79086 18.2091 8 16 8H12C9.79086 8 8 9.79086 8 12V16C8 18.2091 9.79086 20 12 20H16Z" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                                <path d="M20 21V23C20 23.5523 19.5523 24 19 24H9C8.44772 24 8 23.5523 8 23V21" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Map Pin/Location SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient3" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M14 24C14 24 22 16.5 22 10.5C22 6.35786 18.6421 3 14.5 3C10.3579 3 7 6.35786 7 10.5C7 16.5 14 24 14 24Z" stroke="url(#contact-gradient3)" stroke-width="2" fill="none"/>
+                                <circle cx="14.5" cy="10.5" r="3" fill="url(#contact-gradient3)"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Hamilton, Ohio 45011<br>Butler County, Cincinnati Area</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input">
+                                <option value="">Select Service</option>
+                                <option value="ai-tooling">AI Tooling & Automation</option>
+                                <option value="web-development">Website Development</option>
+                                <option value="data-analytics">Data Analytics</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" class="form-input" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Midwest AI Solutions - Hamilton, Ohio</h4>
+                    <p>Empowering businesses across Butler County, Cincinnati, and the greater Midwest with intelligent solutions and cutting-edge technology to drive growth and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">AI Tooling</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Data Analytics</a></li>
+                        <li><a href="#contact">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Midwest AI Solutions. Serving Hamilton, Ohio and the greater Cincinnati area. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
